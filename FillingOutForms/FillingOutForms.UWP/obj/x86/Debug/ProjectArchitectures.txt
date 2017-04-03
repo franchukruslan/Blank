@@ -1,0 +1,1 @@
+D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\FillingOutForms.UWP.csproj;x86

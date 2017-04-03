@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FillingOutForms"
+             x:Class="FillingOutForms.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout Spacing="10" x:Name="layout">
+
+            <Label Text="Бланк"
+                   TextColor="Black"
+                   FontSize="36"
+                   HorizontalOptions="Center" />
+
+            <Entry x:Name="firstName"
+                   Text="Имя"
+                   Focused="focusFirstName"
+                   Unfocused="unFocusFirsName"/>
+
+            <Entry x:Name="lastName"
+                   Text="Фамилия"
+                   IsEnabled="False"
+                   Focused="focusLastName"
+                   Unfocused="unFocusLastName"/>
+
+            <Picker x:Name="countryList"
+                    Title="Страна"
+                    IsEnabled="False"/>
+
+            <Button x:Name="completed"
+                    Text="Next"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
