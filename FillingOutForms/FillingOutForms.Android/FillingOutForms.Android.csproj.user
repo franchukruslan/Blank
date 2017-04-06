@@ -2,5 +2,6 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <SelectedDevice>alps Quest 506</SelectedDevice>
+    <DefaultDevice>Android_ARMv7a</DefaultDevice>
   </PropertyGroup>
 </Project>

@@ -128,7 +128,6 @@ D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\bin\x86\Debug
 D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\bin\x86\Debug\Xamarin.Forms.Xaml.dll
 D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\bin\x86\Debug\Newtonsoft.Json.dll
 D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\bin\x86\Debug\Newtonsoft.Json.xml
-D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\obj\x86\Debug\FillingOutForms.UWP.csprojResolveAssemblyReference.cache
 D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\obj\x86\Debug\App.g.i.cs
 D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\obj\x86\Debug\App.g.cs
 D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\obj\x86\Debug\MainPage.g.i.cs

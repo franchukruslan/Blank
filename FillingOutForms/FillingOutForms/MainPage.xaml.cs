@@ -9,37 +9,28 @@ using Xamarin.Forms;
 
 namespace FillingOutForms
 {
-	public partial class MainPage : ContentPage
+    public partial class MainPage : ContentPage
 	{
+        #region Fields
 
-        public class VkCountry
+        private List<int> countrykeys;
+
+        #endregion
+
+        public enum TypeData
         {
-            public int Id { get; }
-            public string Title { get; }
-            public VkCountry(int countryId, string countryTitle)
-            {
-                Id = countryId;
-                Title = countryTitle;
-            }
-        }
+            Country,
+            Cities,
+            University
+        };
 
         public MainPage()
         {
             InitializeComponent();
-            Task<List<VkCountry>> listCountry = FetchAsync("https://api.vk.com/api.php?oauth=1&method=database.getCountries&v=5.5&need_all=1&count=400");
-            //AddCountry(listCountry);
+            GetDataFromVk("https://api.vk.com/api.php?oauth=1&method=database.getCountries&v=5.5&need_all=1&count=400", TypeData.Country);
         }
 
-        public void AddCountry(List<VkCountry> listCountry)
-        {
-
-            foreach (var country in listCountry)
-            {
-                countryList.Items.Add(country.Title);
-            }
-        }
-
-        public async Task<List<VkCountry>> FetchAsync(string url)
+        public async Task GetDataFromVk(string url, TypeData type)
         {
             string jsonString;
             using (var httpClient = new System.Net.Http.HttpClient())
@@ -49,70 +40,97 @@ namespace FillingOutForms
                     StreamReader reader = new StreamReader(stream);
                     jsonString = reader.ReadToEnd();
 
-                    var listOfCountries = new List<VkCountry>();
+                    var elements = new Dictionary<int, string>();
 
                     var responseCountries = JArray.Parse(JObject.Parse(jsonString)["response"]["items"].ToString());
 
                     foreach (var countryInResponse in responseCountries)
                     {
-                        var vkCountry = new VkCountry((int)countryInResponse["id"], (string)countryInResponse["title"]);
-
-                        listOfCountries.Add(vkCountry);
+                        elements.Add((int)countryInResponse["id"], (string)countryInResponse["title"]+" "+(string)countryInResponse["region"]);
                     }
-                    AddCountry(listOfCountries);
-
-                    return listOfCountries;
+                    switch(type)
+                    {
+                        case TypeData.Country:
+                            addCountry(elements);
+                            countrykeys = elements.Keys.ToList();
+                            break;
+                        case TypeData.Cities:
+                            addCities(elements);
+                            break;
+                        case TypeData.University:
+                            addUniversiti(elements);
+                            break;
+                    }
                 }
             }
         }
 
-        private void focusFirstName(object sender, EventArgs e)
+        private void addCountry(Dictionary<int, string> listCountry)
         {
-            Entry firsName = (Entry)sender;
-            if (firsName.Text == "Имя")
+
+            foreach (var country in listCountry)
             {
-                firsName.Text = "";
+                countryList.Items.Add(country.Value);
             }
+        }
+
+        private void addCities(Dictionary<int, string> cities)
+        {
+            listCities.Suggestions = cities.Values;
+        }
+
+        private void addUniversiti(Dictionary<int, string> universiti)
+        {
+            listUniversity.Suggestions = universiti.Values;
         }
 
         private void unFocusFirsName(object sender, EventArgs e)
         {
             Entry firsName = (Entry)sender;
-            if (firsName.Text != "Имя" && firsName.Text != "")
+            if (firsName.Text != "" && firsName.Text!=null)
             {
                 lastName.IsEnabled = true;
-            }
-            else
-            {
-                firsName.Text = "Имя";
-            }
-        }
-
-        private void focusLastName(object sender, EventArgs e)
-        {
-            Entry lastName = (Entry)sender;
-            if (lastName.Text == "Фамилия")
-            {
-                lastName.Text = "";
-                //System.Threading.Thread.Sleep(10000);
             }
         }
 
         private void unFocusLastName(object sender, EventArgs e)
         {
             Entry lastName = (Entry)sender;
-            if (lastName.Text != "Фамилия" && lastName.Text != "")
+            if (lastName.Text != "" && lastName.Text != null)
             {
                 countryList.IsEnabled = true;
             }
-            else
+        }
+
+        private void Completed_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void listCities_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (listCities.Text != null && listCities.Text != "")
             {
-                lastName.Text = "Фамилия";
+                await GetDataFromVk("https://api.vk.com/api.php?oauth=1&method=database.getCities&v=5.5&q=" + listCities.Text + "&need_all=1&offset=0&count=10&country_id=" + countrykeys[countryList.SelectedIndex].ToString(), TypeData.Cities);
             }
         }
 
-        private async void Completed_Clicked(object sender, EventArgs e)
+        private void countryList_SelectedIndexChanged(object sender, EventArgs e)
         {
+            listCities.IsAvailable = true;
+        }
+
+        private async void listUniversity_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if(listUniversity.Text != null && listUniversity.Text != "")
+            {
+                await GetDataFromVk("https://api.vk.com/api.php?oauth=1&method=database.getUniversities&v=5.5&count=10&q=" + listUniversity.Text, TypeData.University);
+            }
+        }
+
+        private void listCities_SelectedItemChanged(object sender, SelectedItemChangedEventArgs e)
+        {
+            listUniversity.IsAvailable = true;
         }
     }
 }
