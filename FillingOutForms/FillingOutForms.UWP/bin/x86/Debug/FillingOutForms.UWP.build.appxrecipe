@@ -10,19 +10,19 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>f736c883-f105-4d30-a719-4bf328872f5e</PackageIdentityName>
     <PackageIdentityPublisher>CN=Fantom</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\bin\x86\Debug\FillingOutForms.UWP.exe">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\bin\x86\Debug\FillingOutForms.UWP.exe">
       <PackagePath>entrypoint\FillingOutForms.UWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Fantom\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
@@ -379,116 +379,116 @@
     <AppxPackagedFile Include="C:\Users\Fantom\.nuget\packages\Xamarin.Forms\2.3.3.193\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\Dlls\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\Dlls\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\LockScreenLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\LockScreenLogo.scale-100.png">
       <PackagePath>Assets\LockScreenLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\LockScreenLogo.scale-125.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\LockScreenLogo.scale-125.png">
       <PackagePath>Assets\LockScreenLogo.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\LockScreenLogo.scale-150.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\LockScreenLogo.scale-150.png">
       <PackagePath>Assets\LockScreenLogo.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\LockScreenLogo.scale-400.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\LockScreenLogo.scale-400.png">
       <PackagePath>Assets\LockScreenLogo.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\SplashScreen.scale-125.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\SplashScreen.scale-150.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.scale-125.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.scale-125.png">
       <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.scale-150.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.scale-150.png">
       <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.targetsize-16_altform-unplated.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.targetsize-16_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.targetsize-32_altform-unplated.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.targetsize-32_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-32_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.targetsize-48_altform-unplated.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.targetsize-48_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.targetsize-256_altform-unplated.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\Square44x44Logo.targetsize-256_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\Wide310x150Logo.scale-125.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\Wide310x150Logo.scale-125.png">
       <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\Wide310x150Logo.scale-150.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\Wide310x150Logo.scale-150.png">
       <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\bin\x86\Debug\FillingOutForms.UWP.xr.xml">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\bin\x86\Debug\FillingOutForms.UWP.xr.xml">
       <PackagePath>FillingOutForms.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
@@ -500,11 +500,11 @@
     <AppxPackagedFile Include="C:\Users\Fantom\.nuget\packages\Xamarin.Forms\2.3.3.193\lib\uap10.0\Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\androi_test\FillingOutForms\FillingOutForms\FillingOutForms.UWP\bin\x86\Debug\Core\FillingOutForms.UWP.exe">
+    <AppxPackagedFile Include="D:\androi_test\test\Blank\FillingOutForms\FillingOutForms.UWP\bin\x86\Debug\Core\FillingOutForms.UWP.exe">
       <PackagePath>FillingOutForms.UWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

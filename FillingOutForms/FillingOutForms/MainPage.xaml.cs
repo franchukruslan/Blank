@@ -132,5 +132,18 @@ namespace FillingOutForms
         {
             listUniversity.IsAvailable = true;
         }
+
+        private void listUniversity_SelectedItemChanged(object sender, SelectedItemChangedEventArgs e)
+        {
+            completed.IsEnabled = true;
+        }
+
+        private async void completed_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CompletedBlank(firstName.Text, lastName.Text, countryList.Items[countryList.SelectedIndex], listCities.Text, listUniversity.Text));
+        }
+
+
+
     }
 }

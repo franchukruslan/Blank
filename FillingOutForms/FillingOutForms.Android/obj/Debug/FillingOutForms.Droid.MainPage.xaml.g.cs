@@ -32,6 +32,9 @@ namespace FillingOutForms {
         private global::FillingOutForms.AutoCompleteView listCities;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::FillingOutForms.AutoCompleteView listUniversity;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Button completed;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -42,6 +45,7 @@ namespace FillingOutForms {
             lastName = this.FindByName<global::Xamarin.Forms.Entry>("lastName");
             countryList = this.FindByName<global::Xamarin.Forms.Picker>("countryList");
             listCities = this.FindByName<global::FillingOutForms.AutoCompleteView>("listCities");
+            listUniversity = this.FindByName<global::FillingOutForms.AutoCompleteView>("listUniversity");
             completed = this.FindByName<global::Xamarin.Forms.Button>("completed");
         }
     }

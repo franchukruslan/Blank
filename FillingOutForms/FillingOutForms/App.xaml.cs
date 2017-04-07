@@ -13,7 +13,8 @@ namespace FillingOutForms
 		{
 			InitializeComponent();
 
-			MainPage = new FillingOutForms.MainPage();
+            //MainPage = new FillingOutForms.MainPage();
+            MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()

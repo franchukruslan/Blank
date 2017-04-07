@@ -22252,10 +22252,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "D:\\androi_test\\FillingOutForms\\FillingOutForms\\FillingOutForms.UWP\\FillingOutForms.UWP.csproj",
+      "projectUniqueName": "D:\\androi_test\\test\\Blank\\FillingOutForms\\FillingOutForms.UWP\\FillingOutForms.UWP.csproj",
       "projectName": "FillingOutForms.UWP",
-      "projectPath": "D:\\androi_test\\FillingOutForms\\FillingOutForms\\FillingOutForms.UWP\\FillingOutForms.UWP.csproj",
-      "projectJsonPath": "D:\\androi_test\\FillingOutForms\\FillingOutForms\\FillingOutForms.UWP\\project.json",
+      "projectPath": "D:\\androi_test\\test\\Blank\\FillingOutForms\\FillingOutForms.UWP\\FillingOutForms.UWP.csproj",
+      "projectJsonPath": "D:\\androi_test\\test\\Blank\\FillingOutForms\\FillingOutForms.UWP\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

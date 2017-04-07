@@ -2,10 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:FillingOutForms"
-             x:Class="FillingOutForms.MainPage">
+             x:Class="FillingOutForms.MainPage"
+             Title="Бланк">
 
     <ContentPage.Content>
-        <StackLayout Spacing="10" x:Name="layout" IsEnabled="False">
+        <StackLayout Spacing="10" x:Name="layout">
 
             <Label Text="Бланк"
                    TextColor="Black"
@@ -22,26 +23,28 @@
                    Unfocused="unFocusLastName"/>
 
             <Picker x:Name="countryList"
-                    Title="Країна"
+                    Title="Страна"
                     IsEnabled="False"
                     SelectedIndexChanged="countryList_SelectedIndexChanged"/>
 
             <local:AutoCompleteView x:Name="listCities"
                                     IsAvailable="False"
-                                    Placeholder="Місто"
+                                    Placeholder="Город"
                                     ShowSearchButton="False"
                                     TextChanged="listCities_TextChanged"
                                     SelectedItemChanged="listCities_SelectedItemChanged"/>
 
             <local:AutoCompleteView x:Name="listUniversity"
-                                    Placeholder="Університет"
+                                    Placeholder="Университет"
                                     ShowSearchButton="False"
                                     IsAvailable="False"
-                                    TextChanged="listUniversity_TextChanged"/>
+                                    TextChanged="listUniversity_TextChanged"
+                                    SelectedItemChanged="listUniversity_SelectedItemChanged"/>
 
             <Button x:Name="completed"
-                    Text="Next"
-                    IsEnabled="False"/>
+                    Text="Заполнить бланк"
+                    IsEnabled="False"
+                    Clicked="completed_Clicked"/>
 
         </StackLayout>
     </ContentPage.Content>

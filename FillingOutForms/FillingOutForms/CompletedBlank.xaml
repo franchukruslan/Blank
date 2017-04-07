@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FillingOutForms.CompletedBlank">
+
+    <ContentPage.Content>
+        <StackLayout Spacing="10" x:Name="layout">
+
+            <Label Text="Данные бланка"
+                   TextColor="Black"
+                   FontSize="36"
+                   HorizontalOptions="Center" />
+
+            <Label x:Name="firstName"
+                   TextColor="Black"
+                   FontSize="16"
+                   HorizontalOptions="Start"/>
+
+            <Label x:Name="lastName"
+                   TextColor="Black"
+                   FontSize="16"
+                   HorizontalOptions="Start"/>
+
+            <Label x:Name="country"
+                   TextColor="Black"
+                   FontSize="16"
+                   HorizontalOptions="Start"/>
+
+            <Label x:Name="city"
+                   TextColor="Black"
+                   FontSize="16"
+                   HorizontalOptions="Start"/>
+
+            <Label x:Name="university"
+                   TextColor="Black"
+                   FontSize="16"
+                   HorizontalOptions="Start"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
