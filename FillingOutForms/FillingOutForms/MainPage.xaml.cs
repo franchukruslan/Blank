@@ -51,8 +51,15 @@ namespace FillingOutForms
                     switch(type)
                     {
                         case TypeData.Country:
-                            addCountry(elements);
-                            countrykeys = elements.Keys.ToList();
+                            if(elements==null)
+                            {
+                                await DisplayAlert("Ошибка", "Не удалось получить список стран. Проверте соединение с интернетом.", "OK");
+                            }
+                            else
+                            {
+                                addCountry(elements);
+                                countrykeys = elements.Keys.ToList();
+                            }
                             break;
                         case TypeData.Cities:
                             addCities(elements);
@@ -102,11 +109,6 @@ namespace FillingOutForms
             }
         }
 
-        private void Completed_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
         private async void listCities_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (listCities.Text != null && listCities.Text != "")
@@ -140,10 +142,19 @@ namespace FillingOutForms
 
         private async void completed_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new CompletedBlank(firstName.Text, lastName.Text, countryList.Items[countryList.SelectedIndex], listCities.Text, listUniversity.Text));
+            if(checkekFields())
+                await Navigation.PushAsync(new CompletedBlank(firstName.Text, lastName.Text, countryList.Items[countryList.SelectedIndex], listCities.Text, listUniversity.Text));
+            else
+            {
+                await DisplayAlert("Ошибка", "Одно из полей не заполнено.", "OK");
+            }
         }
 
-
-
+        private bool checkekFields()
+        {
+            if (firstName.Text != null && firstName.Text != "" && lastName.Text != null && lastName.Text != "" && listCities.Text != null && listCities.Text != "" && listUniversity.Text != null && listUniversity.Text != "")
+                return true;
+            else return false;
+        }
     }
 }
